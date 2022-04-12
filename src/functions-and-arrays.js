@@ -9,7 +9,6 @@ function maxOfTwoNumbers(num1, num2) {
 }
 
 console.log(maxOfTwoNumbers(29, 25));
-console.log(maxOfTwoNumbers(2, 3));
 
 // -----------------------------------------------------------------------------------------
 
@@ -43,16 +42,14 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbersArray) {
   let contenedor = 0;
-  let contenedorArray = [];
   if (numbersArray.length === 0) {
     return 0;
-  } else {
+  } else if (numbersArray.length !== 0) {
     for (let i = 0; i < numbersArray.length; i++) {
       contenedor += numbersArray[i];
     }
   }
-  contenedorArray.push(contenedor);
-  return contenedorArray;
+  return contenedor;
 }
 
 console.log(sumNumbers(numbers));
